@@ -1,0 +1,92 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    position: fixed; /* Fix navbar to the top */
+    top: 0;
+    left: 0; /* Ensures it aligns from the left side */
+    width: 100%; /* Ensures full width */
+    z-index: 1000; /* Keep it on top of other content */
+    flex-wrap: wrap;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  
+  .navbar .navLinks {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .navItem {
+    margin-right: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar .ctaButton {
+    background-color: #D4AF37;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-left: -100px !important;
+  }
+  
+  .navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .navbar .hamburgerLine {
+    height: 3px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar .navLinks {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .navbar .ctaButton {
+      display: none;
+    }
+  
+    .navbar .hamburger {
+      display: flex;
+    }
+  
+    .navbar .mobileMenu {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #000;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  
