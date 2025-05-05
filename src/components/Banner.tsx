@@ -1,7 +1,7 @@
 import React from 'react';
-import bannerImg from '../assets/banner.jpg'; 
-import secondImg from '../assets/second.jpeg'; 
-import thirdImg from '../assets/third.jpeg';   
+import bannerImg from '../assets/bann1.png'; 
+import secondImg from '../assets/bann2.png'; 
+import thirdImg from '../assets/bann3.png';   
 
 const Banner: React.FC = () => {
   return (
@@ -35,16 +35,16 @@ const Banner: React.FC = () => {
       <div className="carousel-inner">
         {/* First slide */}
         <div className="carousel-item active">
-          <img src={bannerImg} className="d-block w-100" alt="First Slide" style={{ height: '400px', objectFit: 'cover' }} />
-          <div className="carousel-caption d-none d-md-block">
+          <img src={bannerImg} className="d-block w-100" alt="First Slide" style={{ height: '600px', objectFit: 'cover' }} />
+          {/* <div className="carousel-caption d-none d-md-block">
             <h5 style={{color:'black'}}>Welcome to HPHT Diamonds</h5>
             <p>Enhancing the brilliance of diamonds through HPHT technology.</p>
-          </div>
+          </div> */}
         </div>
 
         {/* Second slide */}
         <div className="carousel-item">
-          <img src={secondImg} className="d-block w-100" alt="Second Slide" style={{ height: '400px', objectFit: 'cover' }} />
+          <img src={secondImg} className="d-block w-100" alt="Second Slide" style={{ height: '600px', objectFit: 'cover' }} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Brilliant Colors</h5>
             <p>Transforming natural diamonds into vibrant masterpieces.</p>
@@ -53,7 +53,7 @@ const Banner: React.FC = () => {
 
         {/* Third slide */}
         <div className="carousel-item">
-          <img src={thirdImg} className="d-block w-100" alt="Third Slide" style={{ height: '400px', objectFit: 'cover' }} />
+          <img src={thirdImg} className="d-block w-100" alt="Third Slide" style={{ height: '600px', objectFit: 'cover' }} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Trusted Experts</h5>
             <p>Leading technology and service in diamond color enhancement.</p>
